@@ -18,6 +18,12 @@ namespace FifthGUI
             playerList = new List<string>();
         }
 
+        private string CreateHOFPlayersSQLString()
+        {
+            string sql = "SELECT Master.namefirst, Master.namelast FROM HallOfFame JOIN Master ON HallOfFame.playerID = Master.playerID GROUP BY Master.playerID ORDER BY Master.namelast;";
+            return sql;
+        }
+
         private void hof_button_Click(object sender, RoutedEventArgs e)
         {
             //Student A - uncomment the next line
