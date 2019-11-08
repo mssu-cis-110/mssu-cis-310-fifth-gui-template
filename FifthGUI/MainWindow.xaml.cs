@@ -27,7 +27,7 @@ namespace FifthGUI
         private void hof_button_Click(object sender, RoutedEventArgs e)
         {
             //Student A - uncomment the next line
-            //executeSQL(CreateHOFPlayersSQLString());
+            executeSQL(CreateHOFPlayersSQLString());
         }
 
         private void manager_button_Click(object sender, RoutedEventArgs e)
